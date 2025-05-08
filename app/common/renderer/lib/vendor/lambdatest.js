@@ -18,7 +18,7 @@ export class LambdatestVendor extends BaseVendor {
       {name: 'Access Key', val: accessKey},
     ]);
 
-    const host = process.env.LAMBDATEST_HOST || 'mobile-hub.lambdatest.com';
+    const host = process.env.LAMBDATEST_HOST || 'stage-mobile-hub.lambdatestinternal.com';
     const port = process.env.LAMBDATEST_PORT || 443;
     const path = '/wd/hub';
     const https = parseInt(port, 10) === 443;
