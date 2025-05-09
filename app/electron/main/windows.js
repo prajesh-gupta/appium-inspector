@@ -45,6 +45,7 @@ function buildSessionWindow() {
       nodeIntegration: true,
       contextIsolation: false,
       additionalArguments: openFilePath ? [`filename=${openFilePath}`] : [],
+      webSecurity:false
     },
   });
 }
